@@ -24,6 +24,11 @@ on:
         required: true
         default: "kv-tqqhvhhe-771"
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   Validate:
     uses: ./.github/workflows/template.bicep.validate.yml
