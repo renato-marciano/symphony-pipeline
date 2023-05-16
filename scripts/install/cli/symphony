@@ -147,12 +147,12 @@ configure_orchestrator() {
         if [[ $is_mac == 0 ]]; then
             sedCommand="sed -i '' -e "
         fi
-        eval "git grep -l 'kv-symphony-environments' | xargs $sedCommand \"s/kv-symphony-environments/${SYMPHONY_KV_NAME}/g\""
-        eval "git grep -l 'devops-symphony-362' | xargs $sedCommand \"s/devops-symphony-362/${SYMPHONY_RG_NAME}/g\""
+        eval "git grep -l 'kv-tqqhvhhe-771' | xargs $sedCommand \"s/kv-tqqhvhhe-771/${SYMPHONY_KV_NAME}/g\""
+        eval "git grep -l 'rg-tqqhvhhe-771' | xargs $sedCommand \"s/rg-tqqhvhhe-771/${SYMPHONY_RG_NAME}/g\""
         
         server_endpoint="$(get_acr_login_endpoint)"
-        eval "git grep -l 'crsymphony360.azurecr.io' | xargs $sedCommand \"s/crsymphony360.azurecr.io/${SYMPHONY_ACR_NAME}${server_endpoint}/g\"" 
-        eval "git grep -l 'crsymphony360' | xargs $sedCommand \"s/crsymphony360/${SYMPHONY_ACR_NAME}/g\"" 
+        eval "git grep -l 'crtqqhvhhe771.azurecr.io' | xargs $sedCommand \"s/crtqqhvhhe771.azurecr.io/${SYMPHONY_ACR_NAME}${server_endpoint}/g\"" 
+        eval "git grep -l 'crtqqhvhhe771' | xargs $sedCommand \"s/crtqqhvhhe771/${SYMPHONY_ACR_NAME}/g\"" 
 
         if [ "$IACTOOL" == "bicep" ]; then
             create_pipelines_bicep
