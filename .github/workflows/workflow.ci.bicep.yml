@@ -1,8 +1,8 @@
 name: "CI Bicep"
 
 on:
-  # push:
-  #   branches: [main]
+  push:
+     branches: [main]
   # pull_request:
   #   branches: [main]
 
@@ -23,6 +23,11 @@ on:
         description: "Environment Key Vault Name"
         required: true
         default: "kv-tqqhvhhe-771"
+
+permissions:
+  actions: read
+  contents: read
+  security-events: write
 
 jobs:
   Validate:
