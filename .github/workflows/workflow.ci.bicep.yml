@@ -25,9 +25,10 @@ on:
         default: "kv-tqqhvhhe-771"
 
 permissions:
-  actions: read
-  contents: read
+  actions: write
+  contents: write
   security-events: write
+  checks: write
 
 jobs:
   Validate:
