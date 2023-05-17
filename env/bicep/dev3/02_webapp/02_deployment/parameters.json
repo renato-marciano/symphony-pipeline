@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appSvcPlanSkuName": {
+      "value": "S1"
+    },
+    "appSvcPlanSkuTier": {
+      "value": "Standard"
+    },
+    "appSvcDockerImage": {
+      "value": "crtqqhvhhe771.azurecr.io/eshopwebmvc"
+    },
+    "appSvcDockerImageTag": {
+      "value": "a72dd77"
+    },
+    "containerRegistryResourceGroupName": {
+      "value": "rg-tqqhvhhe-771"
+    },
+    "containerRegistryName": {
+      "value": "crtqqhvhhe771"
+    },
+    "sqlDatabaseCatalogDbName": {
+      "value": "$sqlDatabaseCatalogDbName"
+    },
+    "sqlDatabaseIdentityDbName": {
+      "value": "$sqlDatabaseIdentityDbName"
+    },
+    "sqlServerFqdn": {
+      "value": "$sqlServerFqdn"
+    },
+    "sqlServerAdministratorLogin": {
+      "value": "$sqlServerAdministratorLogin"
+    },
+    "sqlServerAdministratorPassword": {
+      "value": "$sqlServerAdministratorPassword"
+    }
+  }
+}
